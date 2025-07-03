@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect to App</title>
+    <script>
+        window.location.href = "FindMe://payment/done";
+        setTimeout(function() {
+            window.location.href = "market://details?id=com.your.package"; // Fallback на Google Play
+        }, 500);
+    </script>
+</head>
+<body>
+    <a href="FindMe://payment/done">Открыть в приложении</a>
+</body>
+</html>
