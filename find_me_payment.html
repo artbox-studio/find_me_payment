@@ -1,15 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Redirect to App</title>
-    <script>
-        window.location.href = "FindMe://payment/done";
-        setTimeout(function() {
-            window.location.href = "market://details?id=com.your.package"; // Fallback на Google Play
-        }, 500);
-    </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Redirect to Find Me</title>
 </head>
 <body>
-    <a href="FindMe://payment/done">Открыть в приложении</a>
+	<h1>Возвращаемся в "Найди меня"...</h1>
+	<script>
+		// Replace the deeplink scheme and host with your own values
+		var deeplink = "FindMe://payment/done";
+		window.location.href = deeplink;
+	</script>
 </body>
 </html>
